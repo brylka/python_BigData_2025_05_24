@@ -51,14 +51,40 @@ zmienna4 = True         # bool - prawda/fałsz True False
 # for i in string[::-1]:
 #     print(i, end=", ")
 
-slowa = ['oko', 'python', 'civic', 'Kamil Ślimak', 'witaj']
-
-for slowo in slowa:
-    przygotowane_slowo = slowo.lower().replace(" ", "")
-    if przygotowane_slowo == przygotowane_slowo[::-1]:
-        print(f"Słowo {slowo} jest palindromem")
-    else:
-        print(f"Słowo {slowo} NIE jest palindromem")
+# slowa = ['oko', 'python', 'civic', 'Kamil Ślimak', 'witaj']
+#
+# for slowo in slowa:
+#     przygotowane_slowo = slowo.lower().replace(" ", "")
+#     if przygotowane_slowo == przygotowane_slowo[::-1]:
+#         print(f"Słowo {slowo} jest palindromem")
+#     else:
+#         print(f"Słowo {slowo} NIE jest palindromem")
 
 # kamil = "    Kamil Ślimak"
 # print(":" + kamil.upper().replace(" ", ""))
+
+lista1 = []
+lista2 = [1,2,3,4,5]
+lista3 = list(range(1,6,1))
+lista4 = [1, 2] * 10
+#print(lista4)
+
+#print("Witaj świecie!\n" * 10)
+
+lista = [2,3,4,5,3]
+lista2 = ['kamil', 'ślimak']
+print(lista)
+lista.append(6)             #dodaje element na konec lista
+print(lista)
+lista.insert(2, "ala")  #dodaje element pod wskazany index
+print(lista)
+lista.extend(lista2)        #dodaje inną listę do list
+print(lista)
+lista.remove(3)             #kasuje pierwsze wystąpienie elementu
+print(lista)
+lista.pop()                 #kasuje ostatni element
+print(lista)
+lista.pop(1)                #kasuje element o indexie
+print(lista)
+lista.clear()               #czyści listę
+print(lista)
