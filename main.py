@@ -110,17 +110,50 @@ zmienna4 = True         # bool - prawda/fałsz True False
 #
 # print(cos["lista"][2][2]["s"])
 
-for a in range(0,11):
-    for b in range(0,11):
-        if a == 0 and b == 0:
-            print("\033[31m*\033[0m", end="\t")
-        elif a == 0:
-            print("\033[31m", b, "\033[0m", sep="", end="\t")
-        elif b == 0:
-            print("\033[31m", a, "\033[0m", sep="", end="\t")
-        elif a == b:
-            print("\033[32m", a*b, "\033[0m", sep="", end="\t")
-        else:
-            print(a*b, end="\t")
-    print()
+# for a in range(0,11):
+#     for b in range(0,11):
+#         if a == 0 and b == 0:
+#             print("\033[31m*\033[0m", end="\t")
+#         elif a == 0:
+#             print("\033[31m", b, "\033[0m", sep="", end="\t")
+#         elif b == 0:
+#             print("\033[31m", a, "\033[0m", sep="", end="\t")
+#         elif a == b:
+#             print("\033[32m", a*b, "\033[0m", sep="", end="\t")
+#         else:
+#             print(a*b, end="\t")
+#     print()
 
+# lista = []
+# for _ in range(5):
+#     a = int(input("Podaj liczbę: "))
+#     lista.append(a)
+# lista = []
+# podawaj = True
+# while podawaj:
+#     a = input("Podaj liczbę (1,2,3,4,5,6 lub x aby zakończyć): ")
+#     if a == 'x':
+#         podawaj = False
+#     else:
+#         lista.append(int(a))
+#
+#
+# print(lista)
+#
+# suma = 0
+# for liczba in lista:
+#     suma += liczba
+#
+# srednia = suma / len(lista)
+# print(f"Średnia: {srednia}")
+
+def witaj(imie, ok=True):
+    print(f"Witaj {imie}!")
+    if ok:
+        print("Miło mi Cię widzieć!")
+    else:
+        print("Do zobaczenia")
+
+if __name__ == "__main__":
+    witaj("Bartosz", False)
+    witaj("Paweł")
