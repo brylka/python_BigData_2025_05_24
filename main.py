@@ -150,10 +150,9 @@ zmienna4 = True         # bool - prawda/fałsz True False
 def witaj(imie, ok=True):
     print(f"Witaj {imie}!")
     if ok:
-        print("Miło mi Cię widzieć!")
+        print("Miło mi Cię widzieć!!!!!")
     else:
-        print("Do zobaczenia")
+        print("Do zobaczenia!!!!!!")
 
 if __name__ == "__main__":
-    witaj("Bartosz", False)
     witaj("Paweł")
