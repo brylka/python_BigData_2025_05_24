@@ -41,7 +41,10 @@ while True:
         akcja = input("1 - przyspiesz, 2 - zwolnij, 3 - klakson")
         if akcja == "1":
             samochody[ktory].przyspiesz()
-        # elif
+        elif akcja == "2":
+            samochody[ktory].hamuj()
+        elif akcja == "3":
+            samochody[ktory].klakson()
 
 
 
